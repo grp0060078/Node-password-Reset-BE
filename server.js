@@ -38,7 +38,13 @@ const transporter = nodemailer.createTransport({
     user: 'your-email@gmail.com',
     pass: 'your-email-password',
   },
-});
+})
+
+
+//define home endpoint
+app.get('/',(req,res) => {
+  res.send('<h1>WELCOME</h1>')
+})
 
 // Endpoint to initiate password reset
 app.post('/api/reset-password', async (req, res) => {

@@ -14,7 +14,7 @@ const PORT = 3001;
 mongoose.set('strictQuery', false);
 
 // MongoDB setup (replace with your MongoDB connection string)
-mongoose.connect('mongodb+srv://grp0060078:Raja123@cluster0.ib4jxpt.mongodb.net/password_reset');
+mongoose.connect('mongodb+srv://grp0060078:Raja123@cluster0.ib4jxpt.mongodb.net/Reset_password');
 
 // Define MongoDB models
 const User = mongoose.model('User', {
